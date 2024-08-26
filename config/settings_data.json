@@ -9,7 +9,8 @@
 */
 {
   "current": {
-    "logo_width": 90,
+    "logo": "shopify:\/\/shop_images\/No_Saints_Brandmark_DE01_interim_410x_6066eb25-ce8b-472d-bafb-1600d0e0352f.jpg",
+    "logo_width": 200,
     "type_header_font": "raleway_n4",
     "heading_scale": 100,
     "type_body_font": "raleway_n4",
