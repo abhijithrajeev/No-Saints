@@ -16,9 +16,13 @@
 
 @media screen and (max-width: 1130px) {
   .list-menu .header__menu-item {
-    padding: 1rem;
+    padding: 1.2rem;
   }
   .list-menu .link--text {
     font-size: 1.6rem;
+  }
+  .header__heading-logo-wrapper .header__heading-logo {
+    height: auto;
+    max-width: 80%;
   }
 }
