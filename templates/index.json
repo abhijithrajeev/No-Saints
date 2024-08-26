@@ -52,10 +52,123 @@
         "padding_top": 32,
         "padding_bottom": 36
       }
+    },
+    "slideshow_n4zyBG": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_FjHCaz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collection_page_2048x_354c4d62-ed37-4f92-96ca-eefff39d4be4.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_eeAGM7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0134_Edit_Color_2_2048x_744a3071-fb60-4f36-98ce-2ec45cd33371.webp",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_JUwqrm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0075_Edit_Crop_2048x_c555e007-7af9-4649-a4e3-f1978cf89d7a.webp",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_HhnHLc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/104A4141_2048x_7b17d0b9-80d7-458c-9cae-3cadb6cb2545.webp",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_RCeEic": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/95I2729_2048x_2048x_d1e628bd-edd2-4765-a1cd-45c2a9c9fc48.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FjHCaz",
+        "slide_eeAGM7",
+        "slide_JUwqrm",
+        "slide_HhnHLc",
+        "slide_RCeEic"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "slideshow_n4zyBG"
   ]
 }
