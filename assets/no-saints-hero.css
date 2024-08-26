@@ -1,0 +1,9 @@
+.slideshow__controls .slider-button--prev {
+  display: none;
+}
+.slideshow__controls .slider-button--next {
+  display: none;
+}
+.slideshow__controls .slideshow__autoplay {
+  display: none;
+}
