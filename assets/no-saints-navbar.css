@@ -4,3 +4,21 @@
 .list-menu .header__menu-item {
   padding: 1.4rem 3rem;
 }
+
+@media screen and (max-width: 1320px) {
+  .list-menu .header__menu-item {
+    padding: 1.4rem;
+  }
+  .list-menu .link--text {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .list-menu .header__menu-item {
+    padding: 1rem;
+  }
+  .list-menu .link--text {
+    font-size: 1.6rem;
+  }
+}
