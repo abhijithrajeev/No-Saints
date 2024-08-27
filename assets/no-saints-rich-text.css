@@ -1,0 +1,25 @@
+.button {
+  background: #f40046;
+  color: #fff;
+  border: none;
+  --border-offset: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.rte > *:last-child {
+  margin-bottom: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+}
+
+.rich-text__blocks > * + * {
+  margin-top: 3rem;
+}
+
+.rich-text__wrapper .rich-text__blocks h2 {
+  margin-bottom: 4rem;
+}

@@ -1,0 +1,46 @@
+{{ 'no-saints-featured-content.css' | asset_url | stylesheet_tag }}
+
+    <div class="section-container">     
+        <div class="section-container__container">
+            <div class="section-container__container__text-center">
+                <p class="section-container__container__text-center__heading">{{ section.settings['section-container__container__text-center__heading'] }}</p>
+                {%- for block in section.blocks -%}
+                    <p class="section-container__container__text-center__para1">{{ block.settings['section-container__container__text-center__para'] }}</p>
+                {%- endfor -%}
+                <button class="section-container__container__text-center__heading">{{ section.settings['section-container__container__text-center__button'] }}</button>
+            </div>
+        </div>     
+    </div>
+{% schema %}
+{
+    "name": "Featured Content Section",
+    "settings": [
+        {
+         "type": "text",
+         "id": "section-container__container__text-center__heading",
+         "label": "Add Heading"
+        }
+  
+    ],
+    "max_blocks":2,
+    "blocks": [
+        {
+            "type":"text",
+            "name":"Paragraph",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "section-container__container__text-center__para",
+                    "label": "Add Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+       {
+        "category": "Featured-Content",
+        "name": "Featured Content Section"
+       }
+    ]
+}
+{% endschema %}

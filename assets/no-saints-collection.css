@@ -1,5 +1,4 @@
-.section-template--15511294378039__featured_collection-padding
-  .collection__title.title-wrapper {
+.collection .collection__title.title-wrapper {
   margin-bottom: 2.5rem;
   display: flex;
   justify-content: center;
