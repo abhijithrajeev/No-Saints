@@ -121,6 +121,55 @@
         "accessibility_info": ""
       }
     },
+    "rich_text_zGCxgG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YE6G6D": {
+          "type": "heading",
+          "settings": {
+            "heading": "WELCOME TO NO SAINTS",
+            "heading_size": "h2"
+          }
+        },
+        "text_AMj7mY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our sneakers are ethically made with premium materials, causing zero harm to animals, people and the environment. You’ll feel incredible in them, knowing you’re helping unf*ck the world. <\/p>"
+          }
+        },
+        "text_mkmhPp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Caring is the new sexy.<\/p>"
+          }
+        },
+        "button_wTQJU4": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YE6G6D",
+        "text_AMj7mY",
+        "text_mkmhPp",
+        "button_wTQJU4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -152,6 +201,7 @@
   },
   "order": [
     "slideshow_n4zyBG",
+    "rich_text_zGCxgG",
     "featured_collection"
   ]
 }
