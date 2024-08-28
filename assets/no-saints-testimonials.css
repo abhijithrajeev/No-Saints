@@ -1,0 +1,83 @@
+.testimonial-container {
+  position: relative;
+  width: 100%;
+  padding: 20px 60px; /* Increase side padding to accommodate buttons */
+  margin: 30px auto; /* Center the container and ensure margin on the sides */
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+}
+
+.testimonial-item {
+  flex: 0 0 100%; /* Each testimonial takes full width of the container by default */
+  box-sizing: border-box;
+  padding: 20px;
+  margin-right: 20px; /* Space between items */
+  background: white; /* White background for each item */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+}
+
+.testimonial-content {
+  text-align: center; /* Center-align the text */
+}
+
+.testimonial-content p {
+  color: #333; /* Darker text for better readability */
+  font-size: 16px; /* Adequate font size for reading */
+  line-height: 1.5; /* Spacing for line readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+.testimonial-content h2 {
+  font-size: 20px; /* Larger font size for author names */
+  color: black; /* Color to highlight author names */
+  margin-top: 0;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  opacity: 1;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #ccc;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+  .testimonial-item {
+    flex: 0 0 50%; /* Show two testimonials side by side on wider screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-item {
+    flex: 0 0 33.33%; /* Show three testimonials side by side on desktop */
+  }
+}
