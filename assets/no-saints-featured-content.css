@@ -1,20 +1,51 @@
-.section-container {
-  padding: 20px 0;
-  height: 400px;
-}
-
-.container {
-  padding: 20px 0;
-  margin: 0 auto;
-}
-
-.section-container__container__text-center {
+.no-saints-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  /* margin-top: 100px; */
+  margin-bottom: 50px;
 }
-.section-container__container__text-center p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 20px;
-  line-height: 25px;
-  color: #000;
+
+.no-saints-container__block {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row; /* Display blocks in a single row */
+  width: auto; /* Adjust width as needed to fit the row */
+  justify-content: space-between;
+  align-self: center;
+}
+
+.no-saints-container__block-item {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically within each block */
+  align-items: center;
+  text-align: center;
+  margin: 0 30px; /* Spacing between blocks */
+}
+
+.no-saints-container__block-img {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.no-saints-container__block-img img {
+  height: auto;
+  width: 264px;
+}
+
+@media screen and (max-width: 749px) {
+  .no-saints-container__block {
+    flex-direction: column; /* Stack blocks vertically on small screens */
+    width: 100%;
+    align-items: center;
+  }
+
+  .no-saints-container__block-item {
+    margin-bottom: 20px; /* Add spacing between items when stacked */
+  }
 }

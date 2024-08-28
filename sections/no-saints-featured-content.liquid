@@ -1,45 +1,46 @@
 {{ 'no-saints-featured-content.css' | asset_url | stylesheet_tag }}
 
-    <div class="section-container">     
-        <div class="section-container__container">
-            <div class="section-container__container__text-center">
-                <p class="section-container__container__text-center__heading">{{ section.settings['section-container__container__text-center__heading'] }}</p>
-                {%- for block in section.blocks -%}
-                    <p class="section-container__container__text-center__para1">{{ block.settings['section-container__container__text-center__para'] }}</p>
-                {%- endfor -%}
-                <button class="section-container__container__text-center__heading">{{ section.settings['section-container__container__text-center__button'] }}</button>
+<div class="no-saints-container">
+    <div class="no-saints-container__block">
+        {%- for block in section.blocks -%}
+            <div class="no-saints-container__block-item">
+                <div class="no-saints-container__block-img">
+                    {{ block.settings.no-saints-container__block-img1 | image_url: width: 500 | image_tag: class: 'test' }}
+                </div>
+                <div class="no-saints-container__block-text">
+                    <h3>{{ block.settings.no-saints-container__block-text }}</h3>
+                </div>
             </div>
-        </div>     
+        {%- endfor -%}
     </div>
+</div>
 {% schema %}
 {
-    "name": "Featured Content Section",
-    "settings": [
-        {
-         "type": "text",
-         "id": "section-container__container__text-center__heading",
-         "label": "Add Heading"
-        }
-  
-    ],
-    "max_blocks":2,
+    "name": "No-saints Section",
+    "max_blocks":3,
     "blocks": [
         {
-            "type":"text",
-            "name":"Paragraph",
+            "type":"Image",
+            "name":"Image",
             "settings": [
                 {
+                    "type": "image_picker",
+                    "id": "no-saints-container__block-img1",
+                    "label": "Choose Block Image 1"
+                },
+                {
                     "type": "text",
-                    "id": "section-container__container__text-center__para",
-                    "label": "Add Text"
+                    "id": "no-saints-container__block-text",
+                    "label": "Add Image Description"
                 }
             ]
+           
         }
     ],
     "presets": [
        {
-        "category": "Featured-Content",
-        "name": "Featured Content Section"
+        "category": "No-saints-category",
+        "name": "No-saints Features Section"
        }
     ]
 }
