@@ -230,12 +230,71 @@
         "padding_top": 32,
         "padding_bottom": 36
       }
+    },
+    "no_saints_testimonials_iCLWMm": {
+      "type": "no-saints-testimonials",
+      "blocks": {
+        "testimonial_4DGDYt": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial-text": "\"Love my No Saints so much I bought a second pair. Super comfortable, stylish, and regardless of the occasion can wear them on the weekend or to the office\"",
+            "testimonial-author": "DOUG L."
+          }
+        },
+        "testimonial_4NPeVt": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial-text": "\"These shoes are not only gorgeous (people stop me all the time to ask me where I got my gold pair from), but they are also super comfy and easy to clean. These are statement shoes that you can wear with practically everything. I put then on and, voilà, feel 100% more cool\"",
+            "testimonial-author": "HELENA P."
+          }
+        },
+        "testimonial_Nb4dWr": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial-text": "\"I am SO OBSESSED with No Saints Sneakers. Really!!! These shoes are ethical, stylish, fashionable, chic and super comfortable - all the words a girl wants to hear\"",
+            "testimonial-author": "MARICRIS D."
+          }
+        },
+        "testimonial_AijnBw": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial-text": "\"I gave mine a solid working out - covered over 30km in them in a weekend and they felt great. So much better than my old leather sneakers, which took forever to break in\"",
+            "testimonial-author": "PAUL K."
+          }
+        },
+        "testimonial_jHyqtW": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial-text": "\"I have two pairs and I couldn't be happier with them! They're everything I could ever want in a pair of sneakers. Great customer service, would highly recommend\"",
+            "testimonial-author": "ALEHA P."
+          }
+        },
+        "testimonial_n8P8Vw": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial-text": "\"Now onto my third pair of No Saints and couldn’t be happier with them. As comfortable, durable and aesthetic pleasing as any leather shoes but without the dead animals. Highly recommend!\"",
+            "testimonial-author": "LUCAS G"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_4DGDYt",
+        "testimonial_4NPeVt",
+        "testimonial_Nb4dWr",
+        "testimonial_AijnBw",
+        "testimonial_jHyqtW",
+        "testimonial_n8P8Vw"
+      ],
+      "settings": {
+        "testimonial-heading": "What Our Clients Say"
+      }
     }
   },
   "order": [
     "slideshow_n4zyBG",
     "rich_text_zGCxgG",
     "no_saints_featured_content_aqkaHr",
-    "featured_collection"
+    "featured_collection",
+    "no_saints_testimonials_iCLWMm"
   ]
 }
