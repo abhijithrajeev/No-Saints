@@ -1,0 +1,53 @@
+{{ 'dual-image-section.css' | asset_url | stylesheet_tag }}
+
+
+<div class="dual-image-section">
+  <div class="image-container left">
+    <h2 class="image-heading">{{ section.settings.text_one }}</h2>
+    {% if section.settings.image_one %}
+      {{ section.settings.image_one | image_url: width: 500 | image_tag: class: 'test1' }}
+    {% endif %}
+  </div>
+  <div class="image-container right">
+    <h2 class="image-heading">{{ section.settings.text_two }}</h2>
+    {% if section.settings.image_two %}
+      {{ section.settings.image_two | image_url: width: 500 | image_tag: class: 'test2' }}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Dual Image Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_one",
+      "label": "Left Image"
+    },
+    {
+      "type": "text",
+      "id": "text_one",
+      "label": "Text for Left Image",
+      "default": "ABOUT US"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_two",
+      "label": "Right Image"
+    },
+    {
+      "type": "text",
+      "id": "text_two",
+      "label": "Text for Right Image",
+      "default": "ABOUT OUR SHOES"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dual Image Section",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

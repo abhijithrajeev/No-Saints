@@ -12,17 +12,20 @@
 <script src="{{ 'testimonials-slick.js' | asset_url }}"  defer="defer"></script>
 <script src="{{ 'initialize-slick.js' | asset_url }}"  defer="defer"></script>
 
-{% if section.settings['testimonial-heading'] %}
-  <div class="testimonial-container">
-    <div class="testimonial-slider your-class">
-      {%- for block in section.blocks -%}
-        <div class="testimonial-item">
-          <div class="testimonial-content">
-            <p>{{ block.settings['testimonial-text'] }}</p>
-            <h2>{{ block.settings['testimonial-author'] }}</h2>
+{% if section.settings.testimonial_heading %}
+  <div class="testimonial-section">
+    <h1 class="testimonial-heading">{{ section.settings.testimonial_heading }}</h1>
+    <div class="testimonial-container">
+      <div class="testimonial-slider your-class">
+        {%- for block in section.blocks -%}
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>{{ block.settings.testimonial_text }}</p>
+              <h2>{{ block.settings.testimonial_author }}</h2>
+            </div>
           </div>
-        </div>
-      {%- endfor -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 {% endif %}
@@ -34,7 +37,7 @@
   "settings": [
     {
       "type": "text",
-      "id": "testimonial-heading",
+      "id": "testimonial_heading",
       "label": "Section Heading",
       "default": "What Our Clients Say"
     }
@@ -46,13 +49,13 @@
       "settings": [
         {
           "type": "text",
-          "id": "testimonial-text",
+          "id": "testimonial_text",
           "label": "Testimonial Text",
           "default": "This is a sample testimonial."
         },
         {
           "type": "text",
-          "id": "testimonial-author",
+          "id": "testimonial_author",
           "label": "Author Name",
           "default": "John Doe"
         }

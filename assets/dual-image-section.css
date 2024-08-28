@@ -1,0 +1,45 @@
+.dual-image-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures containers stretch to fit the tallest one */
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%; /* Each container takes half the width of the parent */
+  margin: 0 10px;
+}
+
+.image-heading {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%; /* Ensures image takes full width of its container */
+  height: 880px; /* Fixed height as specified */
+  object-fit: cover; /* Covers the area of the container without distortion */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .dual-image-section {
+    flex-direction: column;
+  }
+
+  .image-container {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px; /* Space between images when stacked */
+  }
+
+  .image-container img {
+    width: 100%; /* Adjusts width to full container on smaller screens */
+    height: auto; /* Adjusts height automatically to maintain aspect ratio on smaller screens */
+  }
+}
