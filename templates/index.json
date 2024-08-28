@@ -170,6 +170,39 @@
         "padding_bottom": 52
       }
     },
+    "no_saints_featured_content_aqkaHr": {
+      "type": "no-saints-featured-content",
+      "blocks": {
+        "image_p4aQKn": {
+          "type": "Image",
+          "settings": {
+            "no-saints-container__block-img1": "shopify:\/\/shop_images\/St_Francis_1200x_1600x_5eaf42bc-a3d7-4d6e-8664-7aa0970ca29f.jpg",
+            "no-saints-container__block-text": "ANIMAL FREE"
+          }
+        },
+        "image_LtrDFr": {
+          "type": "Image",
+          "settings": {
+            "no-saints-container__block-img1": "shopify:\/\/shop_images\/sustainableImage.jpg",
+            "no-saints-container__block-text": "SUSTAINABLE MATERIALS"
+          }
+        },
+        "image_hjaPNq": {
+          "type": "Image",
+          "settings": {
+            "no-saints-container__block-img1": "shopify:\/\/shop_images\/Hand_of_God.jpg",
+            "no-saints-container__block-text": "ETHICALLY MADE"
+          }
+        }
+      },
+      "block_order": [
+        "image_p4aQKn",
+        "image_LtrDFr",
+        "image_hjaPNq"
+      ],
+      "settings": {
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -202,6 +235,7 @@
   "order": [
     "slideshow_n4zyBG",
     "rich_text_zGCxgG",
+    "no_saints_featured_content_aqkaHr",
     "featured_collection"
   ]
 }
