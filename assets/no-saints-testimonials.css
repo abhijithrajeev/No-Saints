@@ -23,7 +23,7 @@
 }
 
 .testimonial-item {
-  flex: 0 0 100%; /* Each testimonial takes full width of the container by default */
+  flex: 0 0 87%; /* Each testimonial takes full width of the container by default */
   box-sizing: border-box;
   padding: 20px;
   margin-right: 20px; /* Space between items */
@@ -48,34 +48,50 @@
   margin-top: 0;
 }
 
-.slick-prev,
-.slick-next {
+.slick-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 99;
-  width: 30px;
-  height: 30px;
+  width: 30px; /* Explicit width */
+  height: 30px; /* Explicit height */
+  line-height: 30px; /* Centers text vertically */
   background-color: #fff;
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: none;
   opacity: 1;
+  display: flex; /* Flexbox helps center the content */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  overflow: visible; /* Ensure content overflow is visible */
 }
 
-.slick-prev {
-  left: 10px;
+.slick-previous {
+  left: -7px;
 }
 
-.slick-next {
-  right: 10px;
+.slick-nextarrow {
+  right: -7px;
 }
 
 .slick-prev:hover,
 .slick-next:hover {
   background-color: #ccc;
+}
+.slick-prev::before,
+.slick-next::before {
+  content: "";
+}
+
+.slick-prev::before {
+  content: "-";
+}
+
+.slick-next::before {
+  content: "+";
 }
 
 /* Responsive design adjustments */

@@ -6,6 +6,10 @@
   font-size: 18px;
   font-weight: 400;
 }
+.button:hover {
+  background-color: #cd0e47; /* Darker background color on hover */
+  border: none;
+}
 
 .rte > *:last-child {
   margin-bottom: 0;

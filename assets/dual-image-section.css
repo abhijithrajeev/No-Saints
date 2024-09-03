@@ -27,8 +27,32 @@
   object-fit: cover; /* Covers the area of the container without distortion */
   display: block;
 }
+@media (max-width: 1100px) {
+  .image-container img {
+    width: 100%; /* Ensures image takes full width of its container */
+    height: 800px; /* Fixed height as specified */
+    object-fit: cover; /* Covers the area of the container without distortion */
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .image-container img {
+    width: 100%; /* Ensures image takes full width of its container */
+    height: 660px; /* Fixed height as specified */
+    object-fit: cover; /* Covers the area of the container without distortion */
+    display: block;
+  }
+}
+@media (max-width: 758px) {
+  .image-container img {
+    width: 100%; /* Ensures image takes full width of its container */
+    height: 540px; /* Fixed height as specified */
+    object-fit: cover; /* Covers the area of the container without distortion */
+    display: block;
+  }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .dual-image-section {
     flex-direction: column;
   }

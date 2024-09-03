@@ -1,0 +1,77 @@
+/* Base styles for the newsletter section */
+.newsletter {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.newsletter__wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* This allows for wrapping on smaller screens */
+}
+
+.newsletter-title {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: none; /* Remove border */
+  border-bottom: 2px solid black; /* Add bottom border for underline effect */
+  outline: none; /* Remove the default outline */
+  width: 250px; /* Adjust width as needed */
+}
+
+.newsletter-form .newsletter-form__button {
+  background-color: #f40046;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px; /* Ensures spacing between input and button */
+  font-size: 16px; /* Larger font size for button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  white-space: nowrap; /* Prevent text from breaking into two lines */
+  min-width: 100px; /* Ensure a minimum width to prevent text splitting */
+}
+
+.newsletter-form .newsletter-form__button:hover {
+  background-color: #c3003a; /* Darker background color on hover */
+}
+
+@media (max-width: 768px) {
+  .newsletter__wrapper {
+    flex-direction: column;
+  }
+
+  .newsletter-title {
+    width: 100%;
+    margin-bottom: 15px; /* Space between title and form */
+  }
+
+  .newsletter-form {
+    width: 100%;
+    justify-content: center; /* Centers the form elements */
+  }
+
+  .newsletter-form input[type="email"] {
+    width: calc(100% - 32px); /* Adjust width for responsiveness */
+    margin-bottom: 10px; /* Space below input on small screens */
+  }
+
+  .newsletter-form__button {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 120px; /* Maximum width to ensure the button doesn't become too wide */
+    margin: 0 auto; /* Center the button on smaller screens */
+    margin-bottom: 10px;
+  }
+}

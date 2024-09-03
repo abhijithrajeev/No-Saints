@@ -6,8 +6,8 @@ $(document).ready(function () {
     autoplaySpeed: 3000,
     dots: true,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev">-</button>',
-    nextArrow: '<button type="button" class="slick-next">+</button>',
+    prevArrow: '<button type="button" class="slick-prev">PREV</button>',
+    nextArrow: '<button type="button" class="slick-next">NEXT</button>',
     responsive: [
       {
         breakpoint: 1024,

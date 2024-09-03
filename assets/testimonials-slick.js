@@ -1,11 +1,13 @@
 $(document).ready(function () {
   $(".your-class").slick({
-    slidesToShow: 4, // Adjust based on your layout responsiveness
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
-    // autoplaySpeed: 2000,
-    dots: false, // Disables navigation dots if not needed
-    arrows: true, // Keep or remove as needed
+
+    dots: false,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-previous">-</button>',
+    nextArrow: '<button type="button" class="slick-nextarrow">+</button>',
     responsive: [
       {
         breakpoint: 1024,
