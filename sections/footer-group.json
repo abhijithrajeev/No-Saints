@@ -17,17 +17,11 @@
         "heading_mbPLx7": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
+            "heading": "NEWSLETTER",
+            "heading_size": "h2"
           }
         },
-        "paragraph_zzfRLg": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "email_form_wqqF8C": {
+        "email_form_PpXUpX": {
           "type": "email_form",
           "settings": {
           }
@@ -35,14 +29,13 @@
       },
       "block_order": [
         "heading_mbPLx7",
-        "paragraph_zzfRLg",
-        "email_form_wqqF8C"
+        "email_form_PpXUpX"
       ],
       "settings": {
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "no_saints_newsletter_q8ywrg": {
