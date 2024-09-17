@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding: 20px 60px; /* Increase side padding to accommodate buttons */
-  margin: 40px auto; /* Center the container and ensure margin on the sides */
+  margin: 30px auto; /* Center the container and ensure margin on the sides */
   overflow: hidden;
   /* margin-top: 100px; */
 }
@@ -98,6 +98,15 @@
 @media (min-width: 768px) {
   .testimonial-item {
     flex: 0 0 50%; /* Show two testimonials side by side on wider screens */
+  }
+
+  .testimonial-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 60px; /* Increase side padding to accommodate buttons */
+    margin: 5px auto; /* Center the container and ensure margin on the sides */
+    overflow: hidden;
+    /* margin-top: 100px; */
   }
 }
 
