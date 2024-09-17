@@ -1,17 +1,25 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
 .dual-image-section {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Ensures containers stretch to fit the tallest one */
+  align-items: stretch;
   margin: 0 auto;
   max-width: 1400px;
+  padding: 0 10px; /* Ensure no overflow */
+  box-sizing: border-box; /* Include padding and borders in width calculations */
 }
 
 .image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%; /* Each container takes half the width of the parent */
+  width: 50%;
   margin: 0 10px;
+  box-sizing: border-box;
 }
 
 .image-heading {
@@ -22,33 +30,29 @@
 }
 
 .image-container img {
-  width: 100%; /* Ensures image takes full width of its container */
-  height: 880px; /* Fixed height as specified */
-  object-fit: cover; /* Covers the area of the container without distortion */
+  width: 100%;
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: 880px;
+  object-fit: cover;
   display: block;
+  overflow-x: hidden;
 }
+
 @media (max-width: 1100px) {
   .image-container img {
-    width: 100%; /* Ensures image takes full width of its container */
-    height: 800px; /* Fixed height as specified */
-    object-fit: cover; /* Covers the area of the container without distortion */
-    display: block;
+    height: 800px;
   }
 }
+
 @media (max-width: 991px) {
   .image-container img {
-    width: 100%; /* Ensures image takes full width of its container */
-    height: 660px; /* Fixed height as specified */
-    object-fit: cover; /* Covers the area of the container without distortion */
-    display: block;
+    height: 660px;
   }
 }
+
 @media (max-width: 758px) {
   .image-container img {
-    width: 100%; /* Ensures image takes full width of its container */
-    height: 540px; /* Fixed height as specified */
-    object-fit: cover; /* Covers the area of the container without distortion */
-    display: block;
+    height: 540px;
   }
 }
 
@@ -58,12 +62,12 @@
   }
 
   .image-container {
-    width: 100%; /* Full width on smaller screens */
-    margin-bottom: 20px; /* Space between images when stacked */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .image-container img {
-    width: 100%; /* Adjusts width to full container on smaller screens */
-    height: auto; /* Adjusts height automatically to maintain aspect ratio on smaller screens */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio on smaller screens */
   }
 }
