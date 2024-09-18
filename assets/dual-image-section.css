@@ -57,6 +57,9 @@ html {
 }
 
 @media (max-width: 575px) {
+  .image-container {
+    margin: 0px;
+  }
   .dual-image-section {
     flex-direction: column;
   }
@@ -68,6 +71,5 @@ html {
 
   .image-container img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio on smaller screens */
   }
 }

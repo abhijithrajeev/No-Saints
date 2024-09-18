@@ -38,6 +38,18 @@
   height: 4rem;
   margin-top: 0.6rem;
 }
+
+.newsletter-form__field-wrapper .field .field__input:focus,
+.newsletter-form__field-wrapper .field .field__input::selection {
+  outline: none;
+  box-shadow: none;
+  border: none; /* Optional: to ensure no border appears */
+  border-bottom: 1px solid black;
+}
+.field .field__input {
+  border-bottom: 1px solid black;
+}
+
 @media screen and (max-width: 575px) {
   .newsletter .newsletter__wrapper {
     display: block;
