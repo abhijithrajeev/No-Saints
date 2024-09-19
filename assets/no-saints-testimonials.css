@@ -69,11 +69,11 @@
 }
 
 .slick-previous {
-  left: -7px;
+  left: -10px;
 }
 
 .slick-nextarrow {
-  right: -7px;
+  right: -10px;
 }
 
 .slick-prev:hover,
